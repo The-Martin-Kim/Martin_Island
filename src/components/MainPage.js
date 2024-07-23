@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Story from "./Story";
 
 function MainPage() {
     return (
@@ -10,6 +11,7 @@ function MainPage() {
                 <Col><Intro/></Col>
                 <Col style={{width: "700px", height: "700px"}}><img src="/island.png" alt="island" width={"700px"} height={"700px"}></img></Col>
             </Row>
+            <Story/>
         </Container>
     );
 }
