@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import styled from 'styled-components';
 
 const HoverNavLink = styled(Nav.Link)`
+    font-size: 21px;
     &:hover {
         color: #4796FF;
     }
@@ -12,17 +13,22 @@ const HoverNavLink = styled(Nav.Link)`
 
 function CustomNavbar() {
     return (
-        <Navbar bg="light" className="bg-body-tertiary">
+        <Navbar className="bg-white" style={{display: 'flex', justifyContent: 'center'}}>
             <Container>
-                <Navbar.Brand href="/" className="skranji-regular">
-                    <img
-                        alt=""
-                        src="/logo.png"
-                        width={"30"}
-                        height={"30"}
-                        className="d-inline-block align-top"
-                    />{' '}
-                    Martin Island
+                <Navbar.Brand href="/" className="skranji-regular"
+                              style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <>
+                        <img
+                            alt=""
+                            src="/logo.png"
+                            width={"113"}
+                            height={"113"}
+                            className="d-inline-block align-top"
+                        />
+                        <div style={{textAlign: 'center', marginLeft: "20px", marginTop: "5px", fontSize: "24px"}}>
+                            Martin Island
+                        </div>
+                    </>
                 </Navbar.Brand>
                 <Nav className="justify-content-end pretendard-regular" activeKey="/home">
                     <Nav.Item>
