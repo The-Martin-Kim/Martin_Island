@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 
 import styled from 'styled-components';
 
-const HoverNavLink = styled(Nav.Link)`
+let HoverNavLink = styled(Nav.Link)`
     font-size: 21px;
     &:hover {
         color: #4796FF;
