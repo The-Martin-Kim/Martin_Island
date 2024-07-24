@@ -7,6 +7,7 @@ import styled from 'styled-components';
 let HoverNavLink = styled(Nav.Link)`
     font-size: 21px;
     &:hover {
+        font-weight: bold;
         color: #4796FF;
     }
 `;
